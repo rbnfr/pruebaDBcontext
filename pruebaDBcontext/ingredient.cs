@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace pruebaDBcontext
 {
-    class ingredient
+    class Ingredientes
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
