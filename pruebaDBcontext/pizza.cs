@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace pruebaDBcontext
 {
-    class pizza
+    class Pizza
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
-        public List<ingredient> Ingredientes { get; set; }
+        public List<Ingredient> Ingredientes { get; set; }
         public decimal Precio { get; set; }
         public string Comentarios { get; set; }
 
-        public decimal CalcularPrecio(List<ingredient> list)
+        public decimal CalcularPrecio(List<Ingredient> list)
         {
-            decimal Total = 0;
+            decimal Total = 5;
             foreach (var ingredient in list)
             {
                 Total += ingredient.Precio;

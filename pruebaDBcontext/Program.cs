@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using Autofac;
 
 namespace pruebaDBcontext
 {
@@ -41,26 +42,7 @@ namespace pruebaDBcontext
                 Console.ReadLine();
             }
         }
-        public class Pizza
-        {
-            public int Id { get; set; }
-            public string Nombre { get; set; }
-            public List<Ingredientes> Ingredientes { get; set; }
-            public decimal Precio { get; set; }
-        }
-
-        public class Ingredientes
-        {
-            public int Id { get; set; }
-            public string Nombre { get; set; }
-            public decimal Precio { get; set; }
-        }
-
-        public class PizzaContext : DbContext
-        {
-            public DbSet<Pizza> Pizzas { get; set; }
-            public DbSet<Ingredientes> Ingredientes { get; set; }
-        }
-    }
+        
+    } 
 }
 
